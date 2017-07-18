@@ -11,8 +11,9 @@ import Yaml
 
 class ViewController: NSViewController {
     @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var recipeCount: NSTextField!
     
-    var ItemRecipes = [SS13Recipe]()
+    var ItemRecipes = [Recipe]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +49,17 @@ class ViewController: NSViewController {
             let recipeYaml = try Yaml.load(text)
             let recipes = recipeYaml["recipes"].array;
             print("Loaded \(recipes!.count) recipes from \(recipeFile).")
+            recipeCount.stringValue = "\(recipes!.count) recipes loaded"
             
             for recipe in recipes! {
-                ItemRecipes.append(SS13Recipe(itemName:recipe["name"].string!))
+                var recipeTags = Array<ItemTag>()
+                recipe["tags"].array?.forEach {
+                    let tag = $0
+                    if let tagString = tag.string {
+                        recipeTags.append(getTagForString(tagString: tagString))
+                    }
+                }
+                ItemRecipes.append(Recipe(itemName:recipe["name"].string!, tags: recipeTags))
             }
             
             return true
@@ -81,21 +90,28 @@ extension ViewController: NSTableViewDataSource {
 extension ViewController: NSTableViewDelegate {
     fileprivate enum CellIdentifiers {
         static let ItemNameCell = "ItemNameCellID"
+        static let TagCell      = "TagCellID"
     }
 
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
-        var itemName: String = ""
+        var cellText: String = ""
         var cellIdentifier: String = ""
         let item = ItemRecipes[row]
         
         if(tableColumn == tableView.tableColumns[0]) {
-            itemName = item.itemName
+            cellText = item.itemName
             cellIdentifier = CellIdentifiers.ItemNameCell
+        }
+        else if(tableColumn == tableView.tableColumns[1]) {
+            for tag in item.tags {
+                cellText += tag.rawValue + " "
+            }
+            cellIdentifier = CellIdentifiers.TagCell
         }
         
         if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: cellIdentifier), owner: nil) as? NSTableCellView {
-            cell.textField?.stringValue = itemName
+            cell.textField?.stringValue = cellText
             return cell
         }
         
