@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A0F92641F1C5BD3007C27FE /* food.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2A0F92631F1C5BD3007C27FE /* food.yaml */; };
+		2A0F92671F1C5F06007C27FE /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0F92651F1C5E37007C27FE /* Yaml.framework */; };
+		2A0F92681F1C5F09007C27FE /* Yaml.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */; };
+		2A0F92691F1C5F26007C27FE /* Yaml.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */; };
+		2A0F926A1F1C5F27007C27FE /* Yaml.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0F92651F1C5E37007C27FE /* Yaml.framework */; };
+		2A16DF6D1F1C56E0002804A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16DF6C1F1C56E0002804A8 /* AppDelegate.swift */; };
+		2A16DF6F1F1C56E0002804A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16DF6E1F1C56E0002804A8 /* ViewController.swift */; };
+		2A16DF711F1C56E0002804A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A16DF701F1C56E0002804A8 /* Assets.xcassets */; };
+		2A16DF741F1C56E0002804A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A16DF721F1C56E0002804A8 /* Main.storyboard */; };
+		2AAB6AEC1F1C8D9600910D89 /* SS13Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB6AEB1F1C8D9600910D89 /* SS13Recipe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A16DF7F1F1C57ED002804A8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				2A0F92691F1C5F26007C27FE /* Yaml.framework.dSYM in CopyFiles */,
+				2A0F926A1F1C5F27007C27FE /* Yaml.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A0F92631F1C5BD3007C27FE /* food.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; name = food.yaml; path = ../../../../Desktop/food.yaml; sourceTree = "<group>"; usesTabs = 0; };
+		2A0F92651F1C5E37007C27FE /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/Mac/Yaml.framework; sourceTree = "<group>"; };
+		2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Yaml.framework.dSYM; path = Carthage/Build/Mac/Yaml.framework.dSYM; sourceTree = "<group>"; };
+		2A16DF691F1C56E0002804A8 /* ChemMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A16DF6C1F1C56E0002804A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A16DF6E1F1C56E0002804A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A16DF701F1C56E0002804A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A16DF731F1C56E0002804A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A16DF751F1C56E0002804A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A16DF761F1C56E0002804A8 /* ChemMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChemMaster.entitlements; sourceTree = "<group>"; };
+		2AAB6AEB1F1C8D9600910D89 /* SS13Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SS13Recipe.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A16DF661F1C56E0002804A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A0F92671F1C5F06007C27FE /* Yaml.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A0F92621F1C5BC1007C27FE /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				2A0F92631F1C5BD3007C27FE /* food.yaml */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		2A16DF601F1C56DF002804A8 = {
+			isa = PBXGroup;
+			children = (
+				2A16DF6B1F1C56E0002804A8 /* ChemMaster */,
+				2A16DF6A1F1C56E0002804A8 /* Products */,
+				2A16DF7C1F1C57BA002804A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A16DF6A1F1C56E0002804A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A16DF691F1C56E0002804A8 /* ChemMaster.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A16DF6B1F1C56E0002804A8 /* ChemMaster */ = {
+			isa = PBXGroup;
+			children = (
+				2A0F92621F1C5BC1007C27FE /* Recipes */,
+				2A16DF6C1F1C56E0002804A8 /* AppDelegate.swift */,
+				2A16DF6E1F1C56E0002804A8 /* ViewController.swift */,
+				2AAB6AEB1F1C8D9600910D89 /* SS13Recipe.swift */,
+				2A16DF701F1C56E0002804A8 /* Assets.xcassets */,
+				2A16DF721F1C56E0002804A8 /* Main.storyboard */,
+				2A16DF751F1C56E0002804A8 /* Info.plist */,
+				2A16DF761F1C56E0002804A8 /* ChemMaster.entitlements */,
+			);
+			path = ChemMaster;
+			sourceTree = "<group>";
+		};
+		2A16DF7C1F1C57BA002804A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A0F92651F1C5E37007C27FE /* Yaml.framework */,
+				2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A16DF681F1C56E0002804A8 /* ChemMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A16DF791F1C56E0002804A8 /* Build configuration list for PBXNativeTarget "ChemMaster" */;
+			buildPhases = (
+				2A16DF651F1C56E0002804A8 /* Sources */,
+				2A16DF661F1C56E0002804A8 /* Frameworks */,
+				2A16DF671F1C56E0002804A8 /* Resources */,
+				2A16DF7F1F1C57ED002804A8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChemMaster;
+			productName = ChemMaster;
+			productReference = 2A16DF691F1C56E0002804A8 /* ChemMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A16DF611F1C56DF002804A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Christopher Rohl";
+				TargetAttributes = {
+					2A16DF681F1C56E0002804A8 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 2A16DF641F1C56DF002804A8 /* Build configuration list for PBXProject "ChemMaster" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A16DF601F1C56DF002804A8;
+			productRefGroup = 2A16DF6A1F1C56E0002804A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A16DF681F1C56E0002804A8 /* ChemMaster */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A16DF671F1C56E0002804A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A16DF711F1C56E0002804A8 /* Assets.xcassets in Resources */,
+				2A0F92681F1C5F09007C27FE /* Yaml.framework.dSYM in Resources */,
+				2A0F92641F1C5BD3007C27FE /* food.yaml in Resources */,
+				2A16DF741F1C56E0002804A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A16DF651F1C56E0002804A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AAB6AEC1F1C8D9600910D89 /* SS13Recipe.swift in Sources */,
+				2A16DF6F1F1C56E0002804A8 /* ViewController.swift in Sources */,
+				2A16DF6D1F1C56E0002804A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A16DF721F1C56E0002804A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A16DF731F1C56E0002804A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A16DF771F1C56E0002804A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A16DF781F1C56E0002804A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		2A16DF7A1F1C56E0002804A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChemMaster/ChemMaster.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = ChemMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luigithirty.ChemMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		2A16DF7B1F1C56E0002804A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ChemMaster/ChemMaster.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = ChemMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luigithirty.ChemMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A16DF641F1C56DF002804A8 /* Build configuration list for PBXProject "ChemMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A16DF771F1C56E0002804A8 /* Debug */,
+				2A16DF781F1C56E0002804A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A16DF791F1C56E0002804A8 /* Build configuration list for PBXNativeTarget "ChemMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A16DF7A1F1C56E0002804A8 /* Debug */,
+				2A16DF7B1F1C56E0002804A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A16DF611F1C56DF002804A8 /* Project object */;
+}

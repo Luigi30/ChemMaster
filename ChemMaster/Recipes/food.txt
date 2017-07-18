@@ -1,0 +1,2230 @@
+# List of all public food recipes for mysha's recipe manager.
+# Adapted from: "Foods and Drinks" on the Goonstation Wiki (maintained by Convair880/Pistoleer)
+# Compiled by: Convair880/Pistoleer 
+# 
+# Structure:
+# - Kitchen machinery
+# - Miscellaneous food-related items 
+# - Vending machine snacks
+# - Hydroponics produce and other basic ingredients
+# - Simple recipes (ingredient processing)
+# - Microwave recipes
+# - Main course recipes (oven etc.)
+#
+# Special tags:
+# [kitchen] Kitchen machinery or tool.
+# [produce] Hydroponics produce.
+# [food] It's a food item.
+# [condiment] It's a condiment which can be applied to any food item.
+# [dynamic] A dynamic food recipe, e.g. x cakes or x sandwiches.
+
+name: Food
+recipes:
+
+# Kitchen machinery
+	  
+  - name: Microwave
+    tags: [kitchen]
+	
+  - name: Food processor
+    tags: [kitchen]
+
+  - name: Oven
+    tags: [kitchen]
+	
+  - name: Ice cream machine
+    tags: [kitchen]
+
+  - name: Deep fryer
+    tags: [kitchen]
+
+  - name: Mixer
+    tags: [kitchen]
+
+  - name: Gibber
+    tags: [kitchen]
+
+  - name: Meat spike
+    tags: [kitchen]
+
+  - name: Sink
+    tags: [kitchen]
+
+  - name: Prison loaf processor
+    tags: [kitchen]
+    info:
+      notes: Certain customers may not even be able to visit the bar and enjoy your culinary delicacies. Fortunately, there is still a convenient way to deliver food to the inmates. The Lay-Z Chef Prison Food Chute. Many items (food or otherwise) are suitable components for the processor, which sends the fresh loaf directly to the brig. While you have limited control over the taste or appearance of said loaf, there is actually more to it than meets the eye. It might be worthwhile to experiment with the amount and composition of the ingredients!
+
+# Miscellaneous food-related items
+
+  - name: Rolling pin
+    tags: [kitchen, tool, weapon]
+    info:
+      notes: Required to prepare pizza bases.
+
+  - name: Icing tube
+    tags: [kitchen, tool, container]
+    info:
+      notes: Used for, you guessed it, adding icing to a cake. Accepts 50 units of any liquid.
+
+  - name: Knife
+    info:
+      notes: Used for slaughtering animals and cutting certain items.
+    tags: [kitchen, tool, weapon]
+
+  - name: Fork
+    info:
+      notes: Needed to eat certain dishes.
+    tags: [kitchen, tool, weapon]
+
+  - name: Spoon
+    info:
+      notes: Needed to eat certain dishes.
+    tags: [kitchen, tool, weapon]
+
+  - name: Brain
+    tags: []
+
+  - name: Brain (Synth)
+    tags: [produce]
+
+  - name: Heart
+    tags: []
+
+  - name: Heart (Synth)
+    tags: [produce]
+
+  - name: Heart (Cyber)
+    tags: []
+
+  - name: Butt
+    tags: [clothes, equip]
+
+  - name: Butt (Synth)
+    tags: [produce, clothes, equip]
+
+  - name: Butt (Cyber)
+    tags: [clothes, equip]
+
+  - name: Shaker (Salt)
+    info:
+      notes: Add salt for the perfect flavour. 
+    tags: [kitchen, condiment, container]
+
+  - name: Shaker (Pepper)
+    info:
+      notes: Add pepper for the perfect flavour. 
+    tags: [kitchen, condiment, container]
+
+  - name: Bottle (Mustard)
+    info:
+      notes: Add mustard for the perfect flavour. 
+    tags: [kitchen, condiment, container]
+
+  - name: Bottle (Ketchup)
+    info:
+      notes: Add ketchup for the perfect flavour. 
+    tags: [kitchen, condiment, container]
+
+# Vending machine snacks
+
+  - name: Chips
+    sources:
+      - Vendor
+    tags: [food]
+
+  - name: Candy
+    sources:
+      - Vendor
+    tags: [food]
+
+  - name: Descuento Danito's Burritos
+    sources:
+      - Vendor
+    tags: [food]
+    info:
+      notes: Available in many different flavours. Comes with an integral heating mechanism.
+
+  - name: Discount Dan's Quik-Noodles
+    sources:
+      - Vendor
+    tags: [food]
+    info:
+      notes: Literally poison. Comes with an integral heating mechanism.
+
+  - name: Pope Crunch
+    sources:
+      - Crew quarters
+    tags: [food]
+    info:
+      notes: Extremely crunchy! Can be eaten directly from the box, or mixed with milk in a bowl.
+
+# Hydroponics produce and other basic ingredients
+
+  - name: Wheat
+    tags: [food, produce]
+
+  - name: Wheat (Steel)
+    tags: [food, produce]
+    info:
+      notes: Wheat mutation.
+
+  - name: Apple
+    sources:
+      - Kitchen
+    tags: [food, produce]
+
+  - name: Honey
+    tags: [food, produce]
+    info:
+      notes: Produced by space bees. Taste may vary, depending on the plant that provided the nectar.
+
+  - name: Grape
+    tags: [food, produce]
+
+  - name: Potato
+    sources:
+      - Kitchen
+    tags: [food, produce]
+
+  - name: Corn
+    sources:
+      - Kitchen
+    tags: [food, produce]
+
+  - name: Meat (Synth)
+    tags: [food, produce]
+
+  - name: Pumpkin
+    tags: [food, produce]
+
+  - name: Watermelon
+    tags: [food, produce]
+
+  - name: Mushroom
+    tags: [food, produce]
+
+  - name: Tomato
+    sources:
+      - Kitchen
+    tags: [food, produce]
+
+  - name: Chili
+    tags: [food, produce]
+
+  - name: Chili (Chilly)
+    tags: [food, produce]
+    info:
+      notes: Chili mutation.
+
+  - name: Chili (Ghostlier)
+    tags: [food, produce]
+    info:
+      notes: Chili mutation.
+
+  - name: Lettuce
+    sources:
+      - Kitchen
+    tags: [food, produce]
+
+  - name: Onion
+    tags: [food, produce]
+
+  - name: Garlic
+    tags: [food, produce]
+
+  - name: Carrot
+    tags: [food, produce]
+
+  - name: Eggplant
+    tags: [food, produce]
+
+  - name: Sugarcane
+    tags: [food, produce]
+
+  - name: Soybean
+    tags: [food, produce]
+
+  - name: Peanut
+    tags: [food, produce]
+
+  - name: Banana
+    tags: [food, produce]
+
+  - name: Cucumber
+    tags: [food, produce]
+
+  - name: Avocado
+    tags: [food, produce]
+
+  - name: Orange
+    tags: [food, produce]
+
+  - name: Lemon
+    tags: [food, produce]
+
+  - name: Lime
+    tags: [food, produce]
+
+  - name: Slurrypod
+    tags: [food, produce]
+
+  - name: Strawberry
+    tags: [food, produce]
+
+  - name: Bean pod
+    tags: [food]
+
+  - name: Rice
+    sources:
+      - Cargo bay
+    tags: [food]
+	
+  - name: Milk (Rancid)
+    tags: [drink]
+
+  - name: Bee egg
+    sources:
+      - Cargo bay
+    tags: [food]
+
+  - name: Spaghetti
+    sources:
+      - Kitchen
+      - Cargo bay
+    tags: [food]
+
+  - name: Maple syrup
+    sources:
+      - Kitchen
+      - Cargo bay
+    tags: [food]
+
+  - name: Meat (Mystery)
+    sources:
+      - Raking through gibs.
+    tags: [food]
+
+  - name: Chicken nugget
+    sources:
+      - Kitchen
+    tags: [food]
+    info:
+      notes: May be used in place of mystery meat in most specific recipes.
+
+  - name: Fish
+    sources:
+      - Kitchen
+      - Cargo bay
+    tags: [food]
+
+  - name: Oatmeal
+    sources:
+      - Kitchen
+      - Cargo bay
+    tags: [food]
+
+  - name: Bacon (Raw)
+    sources:
+      - Kitchen
+      - Cargo bay
+    tags: [food]
+
+  - name: Donk pocket
+    sources:
+      - Kitchen
+    tags: [food]
+
+  - name: Donk pocket (Syndicate)
+    sources:
+      - Syndicate uplink
+    tags: [food]
+    info:
+      notes: Administers enough healing reagents and stimulants to qualify as a cheap, short-duration stimpack. Unlike regular pockets, heating them is not required.
+
+  - name: Sauce (Syndicate)
+    sources:
+      - Syndicate uplink
+    tags: [food, condiment]
+    info:
+      notes: Whoever eats food laced with this will feel no effects for a few minutes...then suddenly drop dead.
+
+  - name: ?????
+    sources:
+      - Kitchen (failed dishes).
+      - Extracted from purple goop.
+    tags: [food, stun, disease]
+    info:
+      penetrates_skin: No
+      depletion_rate: 0.4
+      application_effect: INGEST - Food poisoning, stuns the consumer briefly.
+
+  - name: Smoldering mess
+    sources:
+      - Kitchen
+    tags: [food, stun, disease]
+    info:
+      notes: The result of overcooking or -frying something. Stuns and infects the consumer with food poisoning.
+
+# Simple recipes (ingredient processing)
+	
+  - name: Popcorn
+    ingredients:
+      - Corn
+      - Food processor
+      - !step Add the corn cob to the processor.
+    tags: [food]
+
+  - name: Popcorn
+    ingredients:
+      - Corn
+      - Welder
+      - !step Heat the cob with a welding tool or other heat source until it pops.
+    heat_to: Apply heat.
+    tags: [food]
+
+  - name: Guacamole
+    ingredients:
+      - Avocado
+      - Food processor
+      - Spoon
+      - !step Add the avocado to the processor.
+      - !step Requires spoon.
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Yoghurt
+    sources:
+      - Kitchen
+    ingredients:
+      - Milk (Rancid)
+      - Food processor
+      - Spoon
+      - !step Add the bottle of rancid milk to the processor.
+      - !step Requires spoon.
+    tags: [food]
+
+  - name: Flour
+    ingredients:
+      - Wheat
+      - Food processor
+      - !step Add the wheat to the processor.
+    tags: [food]
+
+  - name: Iron fillings
+    ingredients:
+      - Wheat (Steel)
+      - Food processor
+      - !step Add the wheat to the processor.
+    tags: [food, condiment]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Cheese
+    unsorted: true
+    sources:
+      - Kitchen
+      - Cargo bay
+    ingredients:
+      - Milk
+      - Vomit
+      - Fire extinguisher
+      - !step Pour both into a fire extinguisher. Required minimum is 10 units.
+      - !step Use the HUD icon to spray cheese all around you.
+    tags: [food]
+    reaction_message: The mixture curdles up. / A faint cheesy smell drifts through the air...
+    info:
+      notes: You may also create cheese smoke with the bar's chemistry equipment.
+
+  - name: Cheese (Weird)
+    unsorted: true
+    ingredients:
+      - Milk
+      - Vomit (Green)
+      - Fire extinguisher
+      - !step Pour both into a fire extinguisher. Required minimum is 10 units.
+      - !step Use the HUD icon to spray cheese all around you.
+    tags: [food, addictive]
+    reaction_message: The disgusting mixture sloughs together horribly, emitting a foul stench. / A horrible smell assaults your nose! What in space is it?
+    info:
+      notes: You may also create cheese smoke with the bar's chemistry equipment.
+
+  - name: Chocolate bar
+    ingredients:
+      - Happy Elf Hot Chocolate
+      - Fire extinguisher
+      - !step Pour it into a fire extinguisher. Required minimum is 10 units.
+      - !step Use the HUD icon to spray chocolate all around you.
+    tags: [food]
+    info:
+      notes: You may also create chocolate smoke with the bar's chemistry equipment.
+
+  - name: Chocolate chips
+    ingredients:
+      - Candy
+      - Food processor
+      - !step Add the candy to the processor.
+    tags: [food, condiment]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Ectoplasm
+    unsorted: true
+    sources:
+      - Extracted or distilled from omega cannabis leaves.
+    ingredients:
+      - Spooky Dan's
+      - Fire extinguisher
+      - !step Isolate ectoplasm from a Spooky Dan's Horrortastic bottle. Required minimum is 10 units.
+      - !step Pour it into a fire extinguisher.
+      - !step Use the HUD icon to spray ectoplasm all around you.
+    tags: [food]
+    info:
+      notes: You may also create ectoplasm smoke with the bar's chemistry equipment.
+
+  - name: Sugar
+    ingredients:
+      - Sugarcane
+      - Food processor
+      - !step Add the sugarcane to the processor.
+    tags: [food]
+
+  - name: Milk
+    ingredients:
+      - Soybean
+      - Food processor
+      - !step Add the soybean pod to the processor.
+    tags: [food, drink]
+
+  - name: Peanut butter
+    ingredients:
+      - Peanut
+      - Food processor
+      - !step Add the peanuts to the processor.
+    tags: [food]
+
+  - name: Meat (Human)
+    ingredients:
+      - Human
+      - Gibber
+      - !step Stuff the human in the gibber.
+    tags: [food]
+
+  - name: Meat (Monkey)
+    ingredients:
+      - Monkey
+      - Meat spike
+      - !step Put the monkey on the spike.
+    tags: [food]
+
+  - name: Meatball (Human)
+    ingredients:
+      - Meat (Human)
+      - Food processor
+      - !step Add the meat to the processor.
+    tags: [food]
+
+  - name: Meatball (Monkey)
+    ingredients:
+      - Meat (Monkey)
+      - Food processor
+      - !step Add the meat to the processor.
+    tags: [food]
+
+  - name: Meatball (Synth)
+    ingredients:
+      - Meat (Synth)
+      - Food processor
+      - !step Add the meat to the processor.
+    tags: [food]
+
+  - name: Meatball (Mystery)
+    ingredients:
+      - Meat (Mystery)
+      - Food processor
+      - !step Add the meat to the processor.
+    tags: [food]
+
+  - name: Meatball (Brain)
+    ingredients:
+      - <Brain> (human/monkey)
+      - Food processor
+      - !step Add the brain to the processor.
+    tags: [food]
+    info:
+      notes: This does not work with synthbrains.
+
+  - name: Meatball (Butt)
+    ingredients:
+      - <Butt> (human/monkey only)
+      - Food processor
+      - !step Add the butt to the processor.
+    tags: [food]
+
+  - name: Sauce (Ketchup)
+    ingredients:
+      - Tomato
+      - Food processor
+      - !step Add the tomato to the processor.
+    tags: [food, condiment]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Sauce (Hot)
+    ingredients:
+      - Chili
+      - Food processor
+      - !step Add the chili pepper to the processor.
+    tags: [food, condiment]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Sauce (Cold)
+    ingredients:
+      - Chili (Chilly)
+      - Food processor
+      - !step Add the chilly pepper to the processor.
+    tags: [food, condiment]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Sauce (Incredibly Hot)
+    ingredients:
+      - Chili (Ghostlier)
+      - Food processor
+      - !step Add the chilly pepper to the processor.
+    tags: [food, condiment]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Mayonnaise
+    ingredients:
+      - Egg
+      - Food processor
+      - !step Add the egg to the processor.
+    tags: [food]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Cream
+    ingredients:
+      - Milk
+      - Food processor
+      - !step Add the milk bottle to the processor.
+    tags: [food]
+    info:
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Meat (Fish)
+    ingredients:
+      - Fish
+      - Knife
+      - !step Skin the fish with the knife.
+    tags: [food]
+
+  - name: Potato chips
+    ingredients:
+      - Potato
+      - Knife
+      - !step Peel the potato.
+      - !step Chop it into chips.
+    tags: [food]
+
+  - name: Onion ring
+    ingredients:
+      - Onion
+      - Knife
+      - !step Cut the onion with the knife.
+    tags: [food]
+
+  - name: Melon slice
+    ingredients:
+      - Watermelon
+      - Knife
+      - !step Cut the melon with the knife.
+    tags: [food]
+
+  - name: Dough
+    ingredients:
+      - Flour
+      - Sink
+      - !step Use the bag of flour on the sink.
+    tags: [food]
+
+  - name: Dough (Sweet)
+    ingredients:
+      - Dough
+      - Sugar
+      - !step Add sugar to the dough.
+    tags: [food]
+
+  - name: Dough (Cookie)
+    ingredients:
+      - Dough (Sweet)
+      - Knife
+      - !step Cut the sweet dough into smaller pieces.
+    tags: [food]
+
+  - name: Ice cream cone
+    ingredients:
+      - Dough (Sweet)
+      - Sugar
+      - Oven
+      - !step Put the sweet dough and sugar in the oven.
+      - !step Cook for 1 seconds, low.
+    heat_to: 1 second, low
+    tags: [food]
+
+  - name: Batter (Cake)
+    ingredients:
+      - Dough (Sweet)
+      - 2x <Egg>
+      - Mixer
+      - !step Put the sweet dough and two eggs in the mixer.
+    tags: [food]
+
+  - name: Batter (Pancake)
+    ingredients:
+      - Dough (Sweet)
+      - 2x <Egg>
+      - Milk
+      - Mixer
+      - !step Put the sweet dough, two eggs and a bottle of milk in the mixer.
+    tags: [food]
+
+  - name: Wonton wrapper
+    ingredients:
+      - Flour
+      - Egg
+      - Mixer
+      - !step Put the flour and egg in the mixer.
+    tags: [food]
+
+  - name: Meat (Paste)
+    ingredients:
+      - Meat (any type)
+      - Mixer
+      - !step Load the meat in the mixer.
+    tags: [food]
+    info:
+      notes: Works with any kind of meat or fish.
+
+  - name: Custard
+    ingredients:
+      - Milk
+      - Egg
+      - Mixer
+      - !step Put the egg and bottle of milk in the mixer.
+    tags: [food, condiment]
+    info: 
+      notes: Condiment - can be applied to any food, making it heal more.
+
+  - name: Pizza base
+    ingredients:
+      - Dough
+      - Sauce (Ketchup)
+      - Cheese
+      - Rolling pin
+      - !step Roll the dough out with the rolling pin.
+      - !step Add ketchup to the unfinished base.
+      - !step Add cheese to the pizza base.
+    tags: [food]
+
+  - name: Tortilla
+    ingredients:
+      - <Pizza base> (plain)
+      - Knife
+      - !step Cut the pizza base base into smaller pieces.
+    tags: [food]
+    info:
+      notes: This only works when you're using a plain base without ketchup or cheese.
+
+  - name: Bread
+    ingredients:
+      - Dough
+      - Oven
+      - !step Put the dough in the oven.
+      - !step Cook for 1 second, low.
+    heat_to: 1 second, low
+    tags: [food]
+
+  - name: Bread (Banana)
+    ingredients:
+      - Dough
+      - Sugar
+      - Banana
+      - Oven
+      - !step Peel the banana.
+      - !step Put the dough, bag of sugar and peeled banana in the oven.
+      - !step Cook for 1 second, low.
+    heat_to: 1 second, low
+    tags: [food]
+
+  - name: Bread (Elvis)
+    ingredients:
+      - Dough
+      - Peanut butter
+      - Banana
+      - Oven
+      - !step Peel the banana.
+      - !step Put the dough, peanut butter and peeled banana in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Bread (Dread)
+    ingredients:
+      - Dough
+      - Ectoplasm
+      - Oven
+      - !step Load the dough and blob of ectoplasm in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Bread (Pumpkin)
+    ingredients:
+      - Dough
+      - Pumpkin
+      - Oven
+      - !step Load the dough and pumpkin in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Bread (Northern-style cornbread)
+    ingredients:
+      - Dough
+      - Sugar
+      - Corn
+      - Oven
+      - !step Put the dough, bag of sugar and corn cob in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Bread (Southern-style cornbread)
+    ingredients:
+      - Dough
+      - Corn
+      - Oven
+      - !step Put the dough and corn cob in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Bread (Honey-wheat)
+    ingredients:
+      - Dough
+      - Honey
+      - Oven
+      - !step Put the dough and honey in the oven.
+      - !step Cook for 1 seconds, low.
+    heat_to: 1 seconds, low
+    tags: [food]
+
+  - name: Bread (Honey cornbread)
+    ingredients:
+      - Dough
+      - Corn
+      - Honey
+      - Oven
+      - !step Put the dough, corn cob and honey in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Bread (Brain)
+    ingredients:
+      - Loaf of bread (any type)
+      - <Brain> (any type)
+      - Oven
+      - !step Put the bread and brain in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with any combination of bread and brain.
+
+  - name: Bread slice
+    ingredients:
+      - Loaf of bread (any type)
+      - Knife
+      - !step Cut the loaf with the knife.
+    tags: [food]
+
+  - name: Apple on a stick
+    ingredients:
+      - Apple
+      - Rods
+      - !step Combine the rod with the apple.
+    tags: [food]
+
+  - name: Synthorange
+    ingredients:
+      - Orange
+      - Meat (Synth)
+      - !step Combine the synthmeat with the orange.
+    tags: [food]
+    info:
+      notes: Heals twice the amount of regular oranges.
+
+# Microwave recipes
+
+  - name: Donut
+    sources:
+      - Vendor
+      - Kitchen
+    ingredients:
+      - Flour
+      - Egg
+      - Microwave
+      - !step Put the flour and the egg in the microwave.
+    tags: [food]
+    info:
+      notes: Frosted donuts give double the HP recovery to security officers.
+
+  - name: Waffles
+    ingredients:
+      - 2x <Flour>
+      - 2x <Egg>
+      - Microwave
+      - !step Put the two bags of flour and two eggs in the microwave.
+    tags: [food]
+
+  - name: Pie (Custard)
+    ingredients:
+      - 2x <Flour>
+      - Banana
+      - Microwave
+      - Spoon
+      - !step Peel the banana.
+      - !step Put the two bags of flour and the peeled banana in the microwave.
+      - !step Requires spoon.
+    tags: [food]
+
+  - name: Burger (Human)
+    ingredients:
+      - Flour
+      - Meat (Human)
+      - Microwave
+      - !step Put the flour and meat in the microwave.
+    tags: [food]
+
+  - name: Burger (Monkey)
+    ingredients:
+      - Flour
+      - Meat (Monkey)
+      - Microwave
+      - !step Put the flour and meat in the microwave.
+    tags: [food]
+
+  - name: Burger (Synth)
+    ingredients:
+      - Flour
+      - Meat (Synth)
+      - Microwave
+      - !step Put the flour and meat in the microwave.
+    tags: [food]
+
+  - name: Burger (Brain)
+    ingredients:
+      - Flour
+      - <Brain> (human/monkey)
+      - Microwave
+      - !step Put the flour and the brain in the microwave.
+    tags: [food]
+    info:
+      notes: Only a human or monkey brain will work, not synthbrains! Infects whoever eats it with kuru.
+
+  - name: Burger (Roburger)
+    ingredients:
+      - Flour
+      - Cyborg head (Standard)
+      - Microwave
+      - !step Put the flour and the cyborg head in the microwave.
+    tags: [food]
+    info:
+      notes: Recipe is limited to the standard cyborg head. Infects whoever eats it with robotic transformation.
+
+  - name: Burger (Heart)
+    ingredients:
+      - Flour
+      - Heart
+      - Microwave
+      - !step Put the flour and the heart in the microwave.
+    tags: [food]
+    info:
+      notes: Works with human and monkey hearts. Synthetic or cyberhearts are not compatible.
+
+  - name: Burger (Butt)
+    ingredients:
+      - Flour
+      - <Butt> (human/monkey only)
+      - Microwave
+      - !step Put the flour and the butt in the microwave.
+    tags: [food]
+
+  - name: Meatball
+    ingredients:
+      - Meat (Human)
+      - Meat (Monkey)
+      - Microwave
+      - !step Put the human and monkey meat in the microwave.
+    tags: [food]
+    info:
+      notes: Only valid combination is 1x monkey + 1x human.
+
+  - name: Donk pocket (Warm)
+    ingredients:
+      - Flour
+      - <Meatball> (any type)
+      - Microwave
+      - !step Put the flour and meatball in the microwave.
+    tags: [food]
+    info:
+      notes: Will stay warm for about seven minutes.
+
+  - name: Donk pocket (Warm)
+    ingredients:
+      - Donk pocket
+      - Microwave
+      - !step Put the donk pocket in the microwave.
+    tags: [food]
+    info:
+      notes: Once heated, they will stay warm for about seven minutes.
+
+  - name: Popcorn
+    ingredients:
+      - Corn
+      - Microwave
+      - !step Put the corn cob in the microwave.
+    tags: [food]
+
+# Main course recipes (oven etc.)
+
+  - name: Prison loaf
+    ingredients:
+      - Any item (food or otherwise)
+      - Prison loaf processor
+      - !step Stuff whatever you want in the Lay-Z Chef Prison Food Chute and flush it.
+      - !step If the pipes are still intact, a processed loaf should appear in the brig.
+    tags: [food, dynamic]
+    info:
+      notes: It might be worthwhile to experiment with the amount and composition of the ingredients!
+
+  - name: Fried human
+    ingredients:
+      - Human
+      - Deep fryer
+      - !step Stand next to the deep fryer and use the "suicide" verb.
+    tags: [food]
+    info:
+      notes: You cannot forcefully deep-fry somebody.
+
+  - name: Fried monkey
+    ingredients:
+      - Monkey
+      - Deep fryer
+      - !step Grab the monkey and shove them in the fryer.
+    tags: [food]
+
+  - name: Potato (Mashed)
+    ingredients:
+      - 3x <Potato>
+      - Mixer
+      - Fork
+      - !step Add the three potatoes to the mixer.
+      - !step Requires fork.
+    tags: [food]
+
+  - name: Rangoon / Eggroll
+    ingredients:
+      - Wonton wrapper
+      - Any food item
+      - Deep fryer
+      - !step Combine the wrapper with a food item of your choice.
+      - !step Put the rangoon or eggroll into the deep fryer.
+    tags: [food, dynamic]
+    info:
+      notes: Tiny objects make a rangoon, normal-sized items an eggroll.
+
+  - name: Onion ring (Fried)
+    ingredients:
+      - Onion ring
+      - Deep fryer
+      - !step Put the onion ring into the deep fryer.
+    tags: [food]
+
+  - name: Fried everything
+    ingredients:
+      - Any item (food or otherwise)
+      - Deep fryer
+      - !step Put whatever into the deep fryer.
+    tags: [food, dynamic]
+    info:
+      notes: Every food can be deep-fried, and the same applies to many other objects. In fact, pretty much anything you can think of besides containers and bulky items - experiment!
+
+# Broken at the moment.
+#
+#  - name: George melon
+#    ingredients:
+#      - Watermelon
+#      - Meatball (any type)
+#      - !step Apply the meatball to the watermelon.
+#    tags: [food]
+
+#  - name: George melon slice
+#    ingredients:
+#      - George melon
+#      - Knife
+#      - !step Cut the George melon with the knife.
+#    tags: [food]
+#    info:
+#      notes: Slices have a random effect on the consumer.
+
+  - name: Ice cream
+    ingredients:
+      - Ice cream cone
+      - Ice cream machine
+      - !step Add the cone to the ice cream machine.
+      - !step Select a flavour from the internal synthesizer or inserted beaker.
+    tags: [food, dynamic]
+    info:
+      notes: The machine offers three basic flavours. Alternatively, you can use a container with reagents of your choice.
+
+  - name: Brain (Mashed)
+    ingredients:
+      - <Brain> OR <Brain (Synth)>
+      - Mixer
+      - Fork
+      - !step Add the brain to the mixer. 
+      - !step Requires fork.
+    tags: [food]
+
+  - name: Soup (Mushroom)
+    ingredients:
+      - Mushroom
+      - Milk
+      - Mixer
+      - Spoon
+      - !step Add the mushroom and bottle of milk to the mixer.
+      - !step Requires spoon.
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Hotdog
+    ingredients:
+      - 2x <Meatball> (any type)
+      - Oven
+      - !step Load the two meatballs in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Hotdog (Herbal)
+    ingredients:
+      - Hotdog
+      - Herb (any type)
+      - !step Combine the herb with the hotdog.
+    tags: [food]
+    info:
+      notes: You may use any herb, including cannabis or catnip.
+
+  - name: Hotdog (Bun)
+    ingredients:
+      - <Hotdog> OR <Hotdog (Herbal)>
+      - <Bread slice> (any type)
+      - !step Use the slice of bread on the hot dog.
+    tags: [food]
+    info:
+      notes: Appearance and taste depend on the type of sausage and bread.
+
+  - name: Hotdog (Corndog)
+    ingredients:
+      - Hotdog (Bun)
+      - Rods
+      - !step Use the rods on the hotdog-in-a-bun.
+    tags: [food]
+    info:
+      notes: Appearance and taste depend on the type of sausage and bread.
+
+  - name: Donk pocket (Warm)
+    ingredients:
+      - Dough
+      - <Meatball> (any type)
+      - Oven
+      - !step Put the dough and meatball in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Donk pocket (Warm)
+    ingredients:
+      - Donk pocket
+      - Oven
+      - !step Put the donk pocket in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Bacon (Cooked)
+    ingredients:
+      - Bacon (Raw)
+      - Oven
+      - !step Put the raw bacon in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Steak
+    ingredients:
+      - Meat (monkey, human or synth)
+      - Oven
+      - !step Load the slab of meat in the oven.
+      - !step Cook for 9 seconds, low.
+    heat_to: 9 seconds, low
+    tags: [food]
+
+  - name: Fish fingers
+    ingredients:
+      - Meat (Fish)
+      - Oven
+      - !step Load the fish fillet in the oven.
+      - !step Cook for 9 seconds, low.
+    heat_to: 9 seconds, low
+    tags: [food]
+
+  - name: Omelette
+    ingredients:
+      - Meat (monkey, human or synth)
+      - Cheese
+      - 2x <Egg>
+      - Oven
+      - Fork
+      - !step Load the meat, cheese and the two eggs in the oven.
+      - !step Cook for 7 seconds, high.
+      - !step Requires fork.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Omelette (Bee)
+    ingredients:
+      - Meat (monkey, human or synth)
+      - Cheese
+      - 2x <Bee egg>
+      - Oven
+      - Fork
+      - !step Load the meat, cheese and the two bee eggs in the oven.
+      - !step Cook for 7 seconds, high.
+      - !step Requires fork.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Potato (Baked)
+    ingredients:
+      - Potato
+      - Oven
+      - !step Put the potato in the oven.
+      - !step Cook for 9 seconds, low.
+    heat_to: 9 seconds, low
+    tags: [food]
+
+  - name: Fries
+    sources:
+      - Vendor
+      - Kitchen
+    ingredients:
+      - Potato chips
+      - Oven
+      - !step Put the potato chips in the oven.
+      - !step Cook for 7 seconds, low.
+    heat_to: 7 seconds, low
+    tags: [food]
+
+  - name: Bacon and eggs
+    ingredients:
+      - 2x <Bacon (Raw)>
+      - 2x <Egg>
+      - Oven
+      - Fork
+      - !step Load the two strips of raw bacon and the two eggs in the oven.
+      - !step Cook for 8 seconds, high.
+      - !step Requires fork.
+    heat_to: 8 seconds, high
+    tags: [food]
+
+  - name: Spaghetti (Plain)
+    ingredients:
+      - Spaghetti
+      - Oven
+      - Fork
+      - !step Put the spaghetti in the oven.
+      - !step Cook for 8 seconds, high.
+      - !step Requires fork.
+    heat_to: 8 seconds, high
+    tags: [food]
+
+  - name: Spaghetti (Sauce)
+    ingredients:
+      - Spaghetti
+      - Sauce (Ketchup)
+      - Oven
+      - Fork
+      - !step Put the spaghetti and ketchup in the oven.
+      - !step Cook for 8 seconds, high.
+      - !step Requires fork.
+    heat_to: 8 seconds, high
+    tags: [food]
+
+  - name: Spaghetti (Sauce)
+    ingredients:
+      - Spaghetti
+      - Sauce (Ketchup)
+      - Fork
+      - !step Add sauce to the spaghetti.
+      - !step Requires fork.
+    tags: [food]
+
+  - name: Spaghetti (Meatball)
+    ingredients:
+      - Spaghetti
+      - <Meatball> (any type)
+      - Oven
+      - Fork
+      - !step Put the spaghetti and meat ball in the oven.
+      - !step Cook for 8 seconds, high.
+      - !step Requires fork.
+    heat_to: 8 seconds, high
+    tags: [food]
+
+  - name: Spaghetti (Arrabiata)
+    ingredients:
+      - Spaghetti
+      - Sauce (Hot)
+      - Oven
+      - Fork
+      - !step Put the spaghetti and hot sauce in the oven.
+      - !step Cook for 8 seconds, high.
+      - !step Requires fork.
+    heat_to: 8 seconds, high
+    tags: [food]
+
+  - name: Spaghetti (Arrabiata)
+    ingredients:
+      - Spaghetti (Sauce)
+      - Sauce (Hot)
+      - Fork
+      - !step Add hot sauce to the spaghetti.
+      - !step Requires fork.
+    tags: [food]
+
+  - name: Meatball (Swedish)
+    ingredients:
+      - Flour
+      - Egg
+      - 2x <Meatball> (any type)
+      - Oven
+      - Fork
+      - !step Put the flour, egg and two meatballs in the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Requires fork.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Bork Bork Bork!
+
+  - name: Pizza (Everything)
+    ingredients:
+      - Pizza base
+      - Any food item
+      - !step Use the food item on the pizza base to add it as toppings.
+    tags: [food, dynamic]
+    info:
+      notes: The toppings may consist of any food item. Doesn't need to be baked.
+
+  - name: Pizza slice
+    ingredients:
+      - Pizza (Everything)
+      - Knife
+      - !step Cut the pizza into slices with the knife.
+    tags: [food]
+
+  - name: Cookie (Sugar)
+    ingredients:
+      - Dough (Cookie)
+      - Oven
+      - !step Put the cookie dough in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Oatmeal)
+    ingredients:
+      - Dough (Cookie)
+      - Oatmeal
+      - Oven
+      - !step Put the cookie dough and oatmeal in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Chocolate)
+    ingredients:
+      - Dough (Cookie)
+      - Chocolate chips
+      - Oven
+      - !step Put the cookie dough and bag of chocolate chips in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Iron)
+    ingredients:
+      - Dough (Cookie)
+      - Iron fillings
+      - Oven
+      - !step Put the cookie dough and bag of iron fillings in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Bacon)
+    ingredients:
+      - Dough (Cookie)
+      - Bacon (Raw)
+      - Oven
+      - !step Put the cookie dough and raw bacon in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Spookie)
+    ingredients:
+      - Dough (Cookie)
+      - Ectoplasm
+      - Oven
+      - !step Put the cookie dough and blob of ectoplasm in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Jaffa)
+    ingredients:
+      - Dough (Cookie)
+      - Candy
+      - Orange
+      - Oven
+      - !step Put the cookie dough, candy and orange in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Whoopie pie
+    ingredients:
+      - 2x <Cookie (Chocolate)>
+      - Candy
+      - Cream
+      - Oven
+      - !step Put the two chocolate cookies, candy bar and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+    info:
+      notes: Requires chocolate-chip cookies specifically.
+
+  - name: Moon pie (Sugar)
+    ingredients:
+      - 2x <Cookie (Sugar)>
+      - Sugar
+      - Oatmeal
+      - Cream
+      - Oven
+      - !step Put the two sugar cookies, bag of sugar, oatmeal and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Moon pie (Oatmeal)
+    ingredients:
+      - 2x <Cookie (Oatmeal)>
+      - Sugar
+      - Oatmeal
+      - Cream
+      - Oven
+      - !step Put the two oatmeal cookies, bag of sugar, oatmeal and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Moon pie (Chocolate)
+    ingredients:
+      - 2x <Cookie (Chocolate)>
+      - Sugar
+      - Oatmeal
+      - Cream
+      - Oven
+      - !step Put the two chocolate cookies, bag of sugar, oatmeal and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Moon pie (Iron)
+    ingredients:
+      - 2x <Cookie (Iron)>
+      - Sugar
+      - Oatmeal
+      - Cream
+      - Oven
+      - !step Put the two iron cookies, bag of sugar, oatmeal and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Moon pie (Bacon)
+    ingredients:
+      - 2x <Cookie (Bacon)>
+      - Sugar
+      - Oatmeal
+      - Cream
+      - Oven
+      - !step Put the two bacon cookies, bag of sugar, oatmeal and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Moon pie (Spookie)
+    ingredients:
+      - 2x <Cookie (Spookie)>
+      - Sugar
+      - Oatmeal
+      - Cream
+      - Oven
+      - !step Put the two spookie cookies, bag of sugar, oatmeal and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Moon pie (Jaffa)
+    ingredients:
+      - 2x <Cookie (Jaffa)>
+      - Cream
+      - Oven
+      - !step Put the two jaffa cookies and cream in the oven.
+      - !step Cook for 2 seconds, high.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Cookie (Frosting)
+    ingredients:
+      - Cookie OR Moon pie (any type)
+      - Cream
+      - !step Use cream to add frosting to the cookie or moon pie.
+    tags: [food]
+
+  - name: Nougat bar
+    ingredients:
+      - Honey
+      - Sugar
+      - Oven
+      - !step Put the honey and bag of sugar in the oven.
+      - !step Cook for 5 seconds, low
+    heat_to: 5 seconds, low
+    tags: [food]
+
+  - name: Hetz' Cup
+    ingredients:
+      - Peanut butter
+      - Nougat bar
+      - !step Combine the peanut butter with the nougat bar.
+    tags: [food]
+
+  - name: Granola bar
+    ingredients:
+      - Honey
+      - Oatmeal
+      - Oven
+      - !step Put the honey and bag of oatmeal in the oven.
+      - !step Cook for 5 seconds, low
+    heat_to: 5 seconds, low
+    tags: [food]
+
+  - name: Honey Wonks
+    ingredients:
+      - Honey
+      - Pope Crunch
+      - !step Put the honey and box of Pope Crunch in the oven.
+      - !step Cook for 5 seconds, low
+    heat_to: 5 seconds, low
+    tags: [food]
+    info:
+      notes: Can be eaten directly from the box, or mixed with milk in a bowl.
+
+  - name: Waffles
+    ingredients:
+      - Dough
+      - Dough (Sweet)
+      - Oven
+      - !step Put the dough and sweet dough in the oven.
+      - !step Cook for 10 seconds, low.
+    heat_to: 10 seconds, low
+    tags: [food]
+
+  - name: Cake (Pancake)
+    ingredients:
+      - Batter (Pancake)
+      - Maple syrup
+      - Oven
+      - !step Load the pancake batter in the oven.
+      - !step Cook for 6 seconds, high
+      - !step Add maple syrup to the pancakes.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Don't forget to add the maple syrup after cooking the pancakes!
+
+  - name: Meatloaf
+    ingredients:
+      - Meat (Paste)
+      - Oven
+      - Fork
+      - !step Put the meatpaste in the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Requires fork.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Taco
+    ingredients:
+      - Tortilla
+      - Meat (any type)
+      - Cheese
+      - Sauce (Hot)
+      - Oven
+      - !step Put the tortilla in the oven.
+      - !step Cook for 6 seconds, low.
+      - !step Add a slab of meat to the cooked taco shell.
+      - !step Add some cheese.
+      - !step Use a pack of hot sauce to finish the taco.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Most types of meat can be used, including bacon. 
+
+  - name: Tortilla (Chip)
+    ingredients:
+      - Tortilla
+      - Oven
+      - !step Put the tortila in the oven.
+      - !step Cook for 6 seconds, low.
+      - !step Crush the cooked taco shell.
+    heat_to: 6 seconds, low
+    tags: [food]
+
+  - name: Oatmeal (Cereal)
+    ingredients:
+      - Oatmeal
+      - Oven
+      - Spoon
+      - !step Put the oatmeal in the oven.
+      - !step Cook for 7 seconds, high.
+      - !step Requires spoon.
+    heat_to: 7 seconds, high
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Salad
+    ingredients:
+      - 2x <Lettuce>
+      - Oven
+      - Fork
+      - !step Put the two lettuces leaves in the oven.
+      - !step Cook for 5 seconds, low.
+      - !step Requires fork.
+    heat_to: 5 seconds, low
+    tags: [food]
+
+  - name: Soup (Tomato)
+    ingredients:
+      - 2x <Tomato>
+      - Oven
+      - Spoon
+      - !step Put the two tomatoes in the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Requires spoon.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Gruel
+    ingredients:
+      - 3x <?????>
+      - Mixer
+      - Spoon
+      - !step Put the three failed dishes in the mixer.
+      - !step Requires spoon.
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Chili (Con queso)
+    ingredients:
+      - Chili
+      - Cheese
+      - Oven
+      - Spoon
+      - !step Add the chili pepper and cheese to the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Requires spoon.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Chili (Con carne)
+    ingredients:
+      - Chili
+      - Meat (human, monkey or synth)
+      - Oven
+      - Spoon
+      - !step Add the chili pepper and slab of meat to the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Requires spoon.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Chili (Con flagration)
+    ingredients:
+      - Chili
+      - Meat (human, monkey or synth)
+      - 2x <Sauce (Hot)>
+      - Oven
+      - Spoon
+      - !step Add the chili pepper, slab of meat and the two packages of hot sauce to the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Requires spoon.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Chili (El Diablo)
+    ingredients:
+      - Chili (Con carne)
+      - Chili (Con flagration)
+      - Chili
+      - Sauce (Hot)
+      - Oven
+      - Spoon
+      - !step Add the chili pepper, con carne, con flagration and hot sauce to the oven.
+      - !step Cook for 10 seconds, high.
+      - !step Requires spoon.
+    heat_to: 10 seconds, high
+    tags: [food]
+    info:
+      notes: Can be eaten alone (requires spoon) or used as a dip for tortilla chips.
+
+  - name: Burger (Human)
+    ingredients:
+      - Dough
+      - Meat (Human)
+      - Oven
+      - !step Load the dough and slab of meat in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Monkey)
+    ingredients:
+      - Dough
+      - Meat (Monkey)
+      - Oven
+      - !step Load the dough and slab of meat in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Synth)
+    ingredients:
+      - Dough
+      - Meat (Synth)
+      - Oven
+      - !step Load the dough and slab of meat in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Cheese)
+    ingredients:
+      - Dough
+      - <Meat (Human)> OR <Meat (Synth)>
+      - Cheese
+      - Oven
+      - !step Load the dough, cheese and slab of meat in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Burger (Monkey cheese)
+    ingredients:
+      - Dough
+      - Meat (Monkey)
+      - Cheese
+      - Oven
+      - !step Load the dough, cheese and slab of meat in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Burger (Coronator)
+    ingredients:
+      - Dough
+      - 2x Meat (any type)
+      - Cheese
+      - Oven
+      - !step Load the dough, cheese and two slabs of meat in the oven.
+      - !step Cook for 9 seconds, high.
+    heat_to: 9 seconds, high
+    tags: [food]
+
+  - name: Burger (THE MONSTER)
+    ingredients:
+      - 4x <Burger (Coronator)>
+      - Oven
+      - !step Load the four Coronators in the oven.
+      - !step Cook for 9 seconds, low.
+    heat_to: 9 seconds, low
+    tags: [food]
+    info:
+      notes: Crazy-huge burger that will probably make you sick. And by sick, we mean dead. Slowly.
+
+  - name: Burger (Brain)
+    ingredients:
+      - Dough
+      - <Brain> OR <Brain (Synth)>
+      - Oven
+      - !step Load the dough and brain in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Infects whoever eats it with kuru. 
+
+  - name: Burger (Butt)
+    ingredients:
+      - Dough
+      - <Butt> (any type)
+      - Oven
+      - !step Load the dough and butt in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Roburger)
+    ingredients:
+      - Dough
+      - Cyborg head (Standard)
+      - Oven
+      - !step Load the dough and cyborg head in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: A light cyborg head will also work. Infects whoever eats it with robotic transformation.
+
+  - name: Burger (Mystery)
+    ingredients:
+      - Dough
+      - Meat (Mystery)
+      - Oven
+      - !step Load the dough and mystery meat in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Fish)
+    ingredients:
+      - Dough
+      - Meat (Fish)
+      - Oven
+      - !step Load the dough and fish fillet in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Sloppy Joe)
+    ingredients:
+      - Dough
+      - Meat (Paste)
+      - Oven
+      - !step Load the dough and meat paste in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Bacon)
+    ingredients:
+      - Dough
+      - Bacon (Raw)
+      - Oven
+      - !step Load the dough and raw bacon in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+
+  - name: Burger (Heart)
+    ingredients:
+      - Dough
+      - <Heart> OR <Heart (Synth)> OR <Heart (Cyber)>
+      - Oven
+      - !step Load the dough and heart in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food]
+    info:
+      notes: Works with human, monkey or synthetic hearts. Cyberhearts are also compatible.
+
+  - name: Toast (Plain)
+    ingredients:
+      - <Bread slice> (any type)
+      - Oven
+      - !step Put the bread slice in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Toast (Cheese)
+    ingredients:
+      - <Bread slice> (any type)
+      - Cheese
+      - Oven
+      - !step Put the bread slice and cheese in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Toast (Bacon)
+    ingredients:
+      - <Bread slice> (any type)
+      - Bacon (Raw)
+      - Oven
+      - !step Put the bread slice and raw bacon in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Sandwich (Cheese)
+    ingredients:
+      - 2x <Bread slice> (any type)
+      - Cheese
+      - Oven
+      - !step Put the two bread slices and cheese in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Sandwich (Meat)
+    ingredients:
+      - 2x <Bread slice> (any type)
+      - Meat (human, monkey or synth)
+      - Oven
+      - !step Put the two bread slices and slab of meat in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Sandwich (Peanut)
+    ingredients:
+      - 2x <Bread slice> (any type)
+      - Peanut butter
+      - Oven
+      - !step Put the two bread slices and peanut butter in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Sandwich (Peanut and honey)
+    ingredients:
+      - 2x <Bread slice> (any type)
+      - Peanut butter
+      - Honey
+      - Oven
+      - !step Put the two bread slices, peanut butter and honey in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with every kind of bread.
+
+  - name: Sandwich (Everything)
+    ingredients:
+      - 2x <Bread slice> (any type)
+      - Any food item (up to six)
+      - Oven
+      - !step Put the two bread slices and whatever in the oven.
+      - !step Cook for 6 seconds, high.
+    heat_to: 6 seconds, high
+    tags: [food, dynamic]
+    info:
+      notes: Try various fillings to create the ultimate sandwich! You can even mix two different types of bread for the slices.
+
+  - name: Meatball sub
+    ingredients:
+      - Loaf of bread (any type)
+      - Meatball
+      - Cheese
+      - Sauce (Ketchup)
+      - Oven
+      - !step Put the loaf of bread and other listed ingredients in the oven.
+      - !step Cook for 6 seconds, low.
+    heat_to: 6 seconds, low
+    tags: [food]
+    info:
+      notes: Works with any type of bread loaf.
+
+  - name: Pie (Cream)
+    ingredients:
+      - Dough (Sweet)
+      - Cream
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and cream in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Cream everything)
+    ingredients:
+      - Dough (Sweet)
+      - Cream
+      - Any food item
+      - Oven
+      - Spoon
+      - !step Put the sweet dough, cream and food item in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food, dynamic]
+
+  - name: Pie (Custard)
+    ingredients:
+      - Dough (Sweet)
+      - Custard
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and custard in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Apple)
+    ingredients:
+      - Dough (Sweet)
+      - Apple
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and apple in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Pumpkin)
+    ingredients:
+      - Dough (Sweet)
+      - Pumpkin
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and pumpkin in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Lemon)
+    ingredients:
+      - Dough (Sweet)
+      - Lemon
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and lemon in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Lime)
+    ingredients:
+      - Dough (Sweet)
+      - Lime
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and lime in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Strawberry)
+    ingredients:
+      - Dough (Sweet)
+      - 2x <Strawberry>
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and two strawberries in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Slurry)
+    ingredients:
+      - Dough (Sweet)
+      - Slurrypod
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and slurrypod in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Bacon)
+    ingredients:
+      - Dough (Sweet)
+      - Bacon (Raw)
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and raw bacon in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Butt)
+    ingredients:
+      - Dough (Sweet)
+      - <Butt> (any type)
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and butt in the oven.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food]
+
+  - name: Pie (Everything)
+    ingredients:
+      - Dough (Sweet)
+      - Egg
+      - Any item (food or otherwise)
+      - Oven
+      - Spoon
+      - !step Put the sweet dough and whatever in the oven. You may add one or two generic items.
+      - !step Cook for 2 seconds, high.
+      - !step Requires spoon.
+    heat_to: 2 seconds, high
+    tags: [food, dynamic]
+
+  - name: Cake (Cream)
+    ingredients:
+      - Batter (Cake)
+      - Cream
+      - Oven
+      - !step Put the cake batter and cream in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Cake (Chocolate)
+    ingredients:
+      - Batter (Cake)
+      - Candy
+      - Oven
+      - !step Put the cake batter and candy in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Cake (Meat)
+    ingredients:
+      - Batter (Cake)
+      - Meat (human, monkey or synth)
+      - Oven
+      - !step Put the cake batter and slab of meat in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Cake (Brain)
+    ingredients:
+      - Batter (Cake)
+      - <Brain> OR <Brain (Synth)>
+      - Oven
+      - !step Put the cake batter and brain in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Cake (Bacon)
+    ingredients:
+      - Batter (Cake)
+      - 3x <Bacon (Raw)>
+      - Oven
+      - !step Put the cake batter and three raw bacon strips in the oven.
+      - !step Cook for 7 seconds, high.
+    heat_to: 7 seconds, high
+    tags: [food]
+
+  - name: Cake (Everything)
+    unsorted: true
+    ingredients:
+      - Batter (Cake)
+      - Any food item	  
+      - Mixer
+      - Oven
+      - Icing tube
+      - !step Mix the cake batter with the food item of your choice in the mixer.
+      - !step Add the cake batter to the oven.
+      - !step Cook for 6 seconds, high.
+      - !step Fill the icing tube with 50 units of whatever reagents.
+      - !step Add icing to the cake.
+    heat_to: 6 seconds, high
+    tags: [food, dynamic]
+
+  - name: Cake (Everything) slice
+    ingredients:
+      - Cake (Everything)
+      - Knife
+      - !step Cut the cake into slices with the knife.
+    tags: [food]
+
+  - name: Candy apple
+    ingredients:
+      - Apple on a stick
+      - Sugar
+      - Oven
+      - !step Put the apple on a stick and bag of sugar in the oven.
+      - !step Cook for 5 seconds, low.
+    heat_to: 5 seconds, low
+    tags: [food]
