@@ -62,12 +62,18 @@ func getTagForString(tagString: String) -> ItemTag {
 }
 
 class Recipe: NSObject {
-    var itemName: String
-    var tags: Array<ItemTag>
+    let itemName: String
+    let notes: String?
+    let tags: Array<ItemTag>
+    let sources: Array<String>
+    let ingredients: Array<SS13Ingredient>
     
-    init(itemName: String, tags: Array<ItemTag>) {
+    init(itemName: String, notes: String?, tags: Array<ItemTag>, sources: Array<String>, ingredients: Array<SS13Ingredient>) {
         self.itemName = itemName
+        self.notes = notes
         self.tags = tags
+        self.sources = sources
+        self.ingredients = ingredients
     }
     
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A0F92641F1C5BD3007C27FE /* food.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2A0F92631F1C5BD3007C27FE /* food.yaml */; };
 		2A0F92671F1C5F06007C27FE /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A0F92651F1C5E37007C27FE /* Yaml.framework */; };
 		2A0F92681F1C5F09007C27FE /* Yaml.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */; };
 		2A0F92691F1C5F26007C27FE /* Yaml.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */; };
@@ -16,6 +15,8 @@
 		2A16DF6F1F1C56E0002804A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16DF6E1F1C56E0002804A8 /* ViewController.swift */; };
 		2A16DF711F1C56E0002804A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A16DF701F1C56E0002804A8 /* Assets.xcassets */; };
 		2A16DF741F1C56E0002804A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A16DF721F1C56E0002804A8 /* Main.storyboard */; };
+		2A21BA9F1F1F315B007A9D59 /* SS13Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A21BA9E1F1F315B007A9D59 /* SS13Ingredients.swift */; };
+		2A8A06B71F1F23BE0089C263 /* food.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 2A8A06B61F1F23B40089C263 /* food.yaml */; };
 		2AAB6AEC1F1C8D9600910D89 /* SS13Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAB6AEB1F1C8D9600910D89 /* SS13Recipe.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +35,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2A0F92631F1C5BD3007C27FE /* food.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 2; name = food.yaml; path = ../../../../Desktop/food.yaml; sourceTree = "<group>"; usesTabs = 0; };
 		2A0F92651F1C5E37007C27FE /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/Mac/Yaml.framework; sourceTree = "<group>"; };
 		2A0F92661F1C5E3C007C27FE /* Yaml.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Yaml.framework.dSYM; path = Carthage/Build/Mac/Yaml.framework.dSYM; sourceTree = "<group>"; };
 		2A16DF691F1C56E0002804A8 /* ChemMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		2A16DF731F1C56E0002804A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A16DF751F1C56E0002804A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A16DF761F1C56E0002804A8 /* ChemMaster.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChemMaster.entitlements; sourceTree = "<group>"; };
+		2A21BA9E1F1F315B007A9D59 /* SS13Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SS13Ingredients.swift; sourceTree = "<group>"; };
+		2A8A06B61F1F23B40089C263 /* food.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = food.yaml; sourceTree = "<group>"; };
 		2AAB6AEB1F1C8D9600910D89 /* SS13Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SS13Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +64,7 @@
 		2A0F92621F1C5BC1007C27FE /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
-				2A0F92631F1C5BD3007C27FE /* food.yaml */,
+				2A8A06B61F1F23B40089C263 /* food.yaml */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -90,6 +92,7 @@
 				2A0F92621F1C5BC1007C27FE /* Recipes */,
 				2A16DF6C1F1C56E0002804A8 /* AppDelegate.swift */,
 				2A16DF6E1F1C56E0002804A8 /* ViewController.swift */,
+				2A21BA9E1F1F315B007A9D59 /* SS13Ingredients.swift */,
 				2AAB6AEB1F1C8D9600910D89 /* SS13Recipe.swift */,
 				2A16DF701F1C56E0002804A8 /* Assets.xcassets */,
 				2A16DF721F1C56E0002804A8 /* Main.storyboard */,
@@ -169,7 +172,7 @@
 			files = (
 				2A16DF711F1C56E0002804A8 /* Assets.xcassets in Resources */,
 				2A0F92681F1C5F09007C27FE /* Yaml.framework.dSYM in Resources */,
-				2A0F92641F1C5BD3007C27FE /* food.yaml in Resources */,
+				2A8A06B71F1F23BE0089C263 /* food.yaml in Resources */,
 				2A16DF741F1C56E0002804A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +186,7 @@
 			files = (
 				2AAB6AEC1F1C8D9600910D89 /* SS13Recipe.swift in Sources */,
 				2A16DF6F1F1C56E0002804A8 /* ViewController.swift in Sources */,
+				2A21BA9F1F1F315B007A9D59 /* SS13Ingredients.swift in Sources */,
 				2A16DF6D1F1C56E0002804A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
